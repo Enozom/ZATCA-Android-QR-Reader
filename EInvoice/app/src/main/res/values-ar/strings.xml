@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="scan">مسح</string>
+    <string name="bill_info">تفاصيل الفاتورة</string>
+    <string name="rescan">إعادةالمسح</string>
+    <string name="open_gallery">إفتح المعرض</string>
+    <string name="user_camera_to_scan">إستخدم الكاميرا للمسح</string>
+    <string name="pick_an_image">إختر صورة</string>
+    <string name="or">أو</string>
+    <string name="empty_VAT_registration_number">رقم السجل الضريبى غير موجود</string>
+    <string name="ok">موافق</string>
+    <string name="scanner_needs_camera_permission">الماسح يحتاج لإذن الكاميرا</string>
+    <string name="to_scan_qr_code">لكى يمسح رمز الاستجابة</string>
+    <string name="turn_on">تشغيل</string>
+    <string name="empty_string" />
+</resources>

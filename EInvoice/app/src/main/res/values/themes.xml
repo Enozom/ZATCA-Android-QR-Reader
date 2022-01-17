@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.TransparentNoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/color88000000</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <declare-styleable name="ZATCAScannerView">
+        <attr name="zatca_btnBackgroundColor" format="color" />
+        <attr name="zatca_separatorColor" format="color" />
+        <attr name="zatca_textColor" format="color" />
+    </declare-styleable>
+</resources>

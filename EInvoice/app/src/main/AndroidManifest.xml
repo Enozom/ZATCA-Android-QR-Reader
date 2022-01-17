@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.enozom.poc.e_invoice">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+<!--    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />-->
+
+
+    <uses-feature android:name="android.hardware.camera" />
+    <application>
+
+        <activity
+            android:name=".ZATCAScannerActivity"
+            android:theme="@style/Theme.TransparentNoActionBar" />
+
+    </application>
+
+</manifest>

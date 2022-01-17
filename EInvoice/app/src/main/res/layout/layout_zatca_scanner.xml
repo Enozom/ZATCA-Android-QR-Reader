@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/scan_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/tajawal_regular"
+            android:text="@string/user_camera_to_scan"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp18"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RelativeLayout
+            android:id="@+id/scan_holder"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp270"
+            android:layout_marginHorizontal="@dimen/dp70"
+            android:layout_marginTop="@dimen/dp35"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/scan_tv">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_marginHorizontal="@dimen/dp11"
+                app:cardBackgroundColor="@android:color/transparent"
+                app:cardCornerRadius="@dimen/dp30"
+                app:cardElevation="0dp"
+                app:cardMaxElevation="0dp">
+
+                <com.journeyapps.barcodescanner.BarcodeView
+                    android:id="@+id/scan_bv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true" />
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/cam_permission_holder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:textAlignment="gravity"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/no_cam_permission_title_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/tajawal_regular"
+                    android:text="@string/scanner_needs_camera_permission"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp14" />
+
+                <TextView
+                    android:id="@+id/no_cam_permission_subtitle_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/tajawal_regular"
+                    android:text="@string/to_scan_qr_code"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp14" />
+
+                <TextView
+                    android:id="@+id/no_cam_permission_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp20"
+                    android:fontFamily="@font/tajawal_regular"
+                    android:text="@string/turn_on"
+                    android:textColor="@color/color398CFD"
+                    android:textSize="@dimen/sp20" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/scan_indicator"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp7"
+                android:layout_centerInParent="true"
+                android:layout_marginHorizontal="@dimen/dp11"
+                android:background="@drawable/bk_rounded_398cfd" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@drawable/bk_scan_view" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/or_holder"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dp35"
+            android:layout_marginTop="@dimen/dp60"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:textAlignment="gravity"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/scan_holder">
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="@color/white" />
+
+            <TextView
+                android:id="@+id/or_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dp7"
+                android:fontFamily="@font/tajawal_regular"
+                android:text="@string/or"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp14"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/close_iv" />
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="@color/white" />
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/scan_btn"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dp35"
+            android:layout_marginTop="@dimen/dp68"
+            android:background="@drawable/bk_rounded_398cfd"
+            android:fontFamily="@font/tajawal_regular"
+            android:text="@string/pick_an_image"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp18"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/or_holder" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</merge>
