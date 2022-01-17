@@ -8,7 +8,10 @@
 ZATAC Scanner is kotlin-based QR code scanner and parser which de-crypt TLV qr codes and parse them into their values, provided by https://e-invoice.io 
 
 ## Preview
-[![ZATCA-scanner-demo.gif](./preview/ZATCA%20scanner%20demo.gif)](https://e-invoice.io)
+<p align="center">      
+    <a href="https://e-invoice.io"><img src="./preview/ZATCA%20scanner%20demo.gif" alt="https://e-invoice.io"></a>
+</p>
+
 
 ## Features
 
