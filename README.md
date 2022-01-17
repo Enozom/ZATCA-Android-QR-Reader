@@ -5,7 +5,7 @@
 ![Alt text](https://img.shields.io/badge/Library_version-1.0.0-orange)
 ![Alt text](https://img.shields.io/badge/Framework-Android-<COLOR>)
 
-ZATAC Scanner is kotlin-based QR code scanner and parser which de-crypt TLV qr codes and parse them into their values.
+ZATAC Scanner is kotlin-based QR code scanner and parser which de-crypt TLV qr codes and parse them into their values, provided by https://e-invoice.io 
 
 ## Features
 
