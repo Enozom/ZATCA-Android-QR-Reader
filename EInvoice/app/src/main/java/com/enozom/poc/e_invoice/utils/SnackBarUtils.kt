@@ -27,7 +27,7 @@ class SnackBarUtils private constructor() {
             if (rootView == null)
                 rootView = activity?.window?.decorView?.rootView
 
-            if (rootView != null) {
+            if (rootView != null && (mSnackBar == null || (mSnackBar != null && mSnackBar?.isShown == false))) {
                 mSnackBar = Snackbar.make(rootView, message, Snackbar.LENGTH_LONG)
                 mSnackBar!!.setAction(R.string.ok) { mSnackBar!!.dismiss() }
                 mSnackBar!!.show()
