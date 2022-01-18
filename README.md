@@ -1,11 +1,17 @@
 # ZATAC Scanner
-![Alt text](https://i.postimg.cc/tgJTRK3t/logo.png)
+[![Alt text](https://i.postimg.cc/tgJTRK3t/logo.png)](https://e-invoice.io)
 
 ![Alt text](https://img.shields.io/badge/Depedencies-up_to_date-<COLOR>)
 ![Alt text](https://img.shields.io/badge/Library_version-1.0.0-orange)
 ![Alt text](https://img.shields.io/badge/Framework-Android-<COLOR>)
 
-ZATAC Scanner is kotlin-based QR code scanner and parser which de-crypt TLV qr codes and parse them into their values.
+ZATAC Scanner is kotlin-based QR code scanner and parser which de-crypt TLV qr codes and parse them into their values, provided by https://e-invoice.io 
+
+## Preview
+<p align="center">      
+    <a href="https://e-invoice.io"><img src="./preview/ZATCA%20scanner%20demo.gif" alt="https://e-invoice.io"></a>
+</p>
+
 
 ## Features
 
@@ -40,7 +46,7 @@ activityLauncher.launch(ZATCAScannerActivity.newIntent(this)) //this refers to a
 ## Customizations
 you can customize the buttons ,scan indicator background color and text color.
 
-![Alt text](https://i.postimg.cc/Kzgk2SN1/Screen-Shot-2022-01-17-at-3-03-23-PM.png)
+[![Alt text](https://i.postimg.cc/Kzgk2SN1/Screen-Shot-2022-01-17-at-3-03-23-PM.png)](/)
 
 - provide the prefered color resource id for the buttons, the text color and the separator color and visibilty via intent
 ```sh
